@@ -16,4 +16,6 @@ public class Note {
     public string Content { get; set; } = string.Empty;
     [Range(1, 5, ErrorMessage = "Приоритет должен быть от 1 до 5")]
     public int Priority { get; set; } = 3;
+    public string Title { get; set; } = string.Empty;
+    public DateTime UpdatedAt { get; internal set; }
 }
